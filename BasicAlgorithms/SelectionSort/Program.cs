@@ -43,9 +43,10 @@ namespace SelectionSort
         //Data rearranged by finding the smallest value in the unsorted array
         //and switching it with the the last unsorted value. Visual below
         // Iteration   Unsorted Array           Sorted Array
-        //    1        index 0 forwards         Empty
-        //    2        index 1 forwards         index 0
-        //    3        index 2 forwards         index 0, 1
+        //    0        index 0 forwards         Empty
+        //    1        index 1 forwards         index 0
+        //    2        index 2 forwards         index 0, 1
+        //    3        index 3 forwards         index 0, 1, 2
         // ...
         //  n - 1      index n - 2 forwards     index 0 - (n - 3)   
         //    n        index n - 1 forwards     index 0 - (n - 2)
