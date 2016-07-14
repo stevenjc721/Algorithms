@@ -50,30 +50,26 @@ namespace SelectionSort
         // ...
         //  n - 1      index n - 2 forwards     index 0 - (n - 3)   
         //    n        index n - 1 forwards     index 0 - (n - 2)
-        static void sSort(int[] array)
-        {
+        static void sSort(int[] array){
 
             //length of array
             int length = array.Length;
 
             //Step through the unsorted array
-            for (int i = 0; i < length; i++)
-            {
+            for (int i = 0; i < length; i++){
 
                 // We set the currentMin to the index for the first element in the unsorted array
                 int currentMin = i;
 
                 // We step through the remaining unsorted array and find the smalled int
-                for (int j = i + 1; j < length; j++)
-                {
+                for (int j = i + 1; j < length; j++){
 
                     //When a smaller value is found we store our newest minimum value index
                     if (array[j] < array[currentMin]) currentMin = j;
                 }
 
                 //Prevent unnecessary assignment
-                if (array[i] != array[currentMin])
-                {
+                if (array[i] != array[currentMin]){
 
                     int toSwap = array[i];
                     array[i] = array[currentMin];
