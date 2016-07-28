@@ -51,7 +51,6 @@ namespace MergeSort
         }
 
         //Initial Step: Get values for recursion
-        //I prefer to seperate base call from recursion, this is a personal preferences and not needed.
         static void mSort(int[] array){
 
             int[] aux = new int[array.Length];
@@ -63,7 +62,7 @@ namespace MergeSort
 
         }
 
-        //Quick Sort
+        //Merge Sort
         public static void mSort(int[] array, int[] aux, int left, int right){
 
             //Base case
@@ -107,7 +106,7 @@ namespace MergeSort
             //While our left and right indexes are within their appropriate subarrays continue
             while (lIndex <= middle && rIndex <= right){
 
-                //If value at left index is greater/equal to our value at right index set aux value for current aux Index and increase current left index
+                //If value at left index >= value at right index set aux value for current aux Index and increase current left index
                 if (array[lIndex] >= array[rIndex]){
 
                     aux[aIndex] = array[lIndex++];

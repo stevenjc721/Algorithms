@@ -58,13 +58,13 @@ namespace SelectionSort
             //Step through the unsorted array
             for (int i = 0; i < length; i++){
 
-                // We set the currentMin to the index for the first element in the unsorted array
+                // set the currentMin to the index for the first element in the unsorted array
                 int currentMin = i;
 
-                // We step through the remaining unsorted array and find the smalled int
+                // step through the remaining unsorted array and find the smalled int
                 for (int j = i + 1; j < length; j++){
 
-                    //When a smaller value is found we store our newest minimum value index
+                    //When a smaller value is found store our newest minimum value index
                     if (array[j] < array[currentMin]) currentMin = j;
                 }
 

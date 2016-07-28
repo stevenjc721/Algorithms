@@ -60,27 +60,27 @@ namespace ShellSort
                 for (int i = 0; i < length; i++){
 
                     j = i;
-                    //Our initial value to compare
+                    //initial value to compare
                     temp = array[i];
 
-                    //Comparing only within our increment && if our current value is less than the compared we swap them
+                    //Comparing only within increment && if  current value is < the compared swap them
                     while ((j >= increment) && array[j - increment] > temp){
 
                         array[j] = array[j - increment];
-                        j = j - increment; // Reset our position and break out of the loop when comparison is complete
+                        j = j - increment; // Reset position and break out of the loop when comparison is complete
                     }
 
                     array[j] = temp;
                 }
                 //increment management after each iteration
                 if (increment == 1){
-                    //If increment = 1 we have just completed a traditional insertion sort
+                    //If increment = 1 completed a traditional insertion sort
                     increment = 0;
 
                 }
                 else if (increment/2 >= 1){
 
-                    // As long as increment is >= 2 we step down to a smaller increment.
+                    // As long as increment is >= 2 step down to a smaller increment.
                     increment = increment/2;
                 }
             }

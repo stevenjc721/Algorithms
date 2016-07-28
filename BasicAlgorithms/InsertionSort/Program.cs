@@ -52,7 +52,7 @@ namespace InsertionSort{
                 //Iterate through all previous values to find correct position in sorted array
                 for (int j = i - 1; j >= 0 && inserted != 1;){
 
-                    //If our current max, array[j], is greater than our value to sort we swap our current max with our value to sort
+                    //If our current max > value swap them
                     if (array[j] > toSort){
 
                         array[j + 1] = array[j]; // push current max up

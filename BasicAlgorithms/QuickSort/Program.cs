@@ -47,7 +47,6 @@ namespace QuickSort{
         }
 
         //Initial Step: Get values for recursion
-        //I prefer to seperate base call from recursion, this is a personal preferences and not needed.
         static void qSort(int[] array){
 
             int left = 0;
@@ -72,21 +71,21 @@ namespace QuickSort{
 
                 int pivot = left;
                 
-                //We examine elements to the right of our pivot. Because in this case our pivot is our first element
+                //We examine elements to the right of our pivot because in this case our pivot is our first element
                 for (int i = left + 1; i < right; i++){
 
-                    //If the current element is greater than our pivot, we push the element to the left
+                    //If the current element > pivot, push element to the left
                     if (array[i] > array[left]){
 
                         swap(array, i, ++pivot);
                     }
                 }
-                //Place our pivot element on the greatest index on the left
+                //Place pivot element on the greatest index on the left
                 swap(array, left, pivot);
 
-                //Recursive call to sort elements to the left of our pivot
+                //Recursive call to sort elements to the left of pivot
                 qSort(array, left, pivot);
-                //Recursive call to sort elements to the right of our pivot
+                //Recursive call to sort elements to the right of pivot
                 qSort(array, pivot + 1, right);
             }
         }
