@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapSort", "HeapSort\HeapSort.csproj", "{CA90A20B-4A12-44D2-BB33-B6389C2CC4EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadixSort", "RadixSort\RadixSort.csproj", "{854B7444-7F91-40A6-8AFB-370A6E4CA69C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CA90A20B-4A12-44D2-BB33-B6389C2CC4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA90A20B-4A12-44D2-BB33-B6389C2CC4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA90A20B-4A12-44D2-BB33-B6389C2CC4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854B7444-7F91-40A6-8AFB-370A6E4CA69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854B7444-7F91-40A6-8AFB-370A6E4CA69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854B7444-7F91-40A6-8AFB-370A6E4CA69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854B7444-7F91-40A6-8AFB-370A6E4CA69C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

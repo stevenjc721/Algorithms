@@ -7,7 +7,7 @@
  * 23, 3, 2, 34, 6
  * 
  * Output:
- * 2, 3, 6, 23, 34
+ * 34, 23, 6, 3, 2
  * 
  * Heap Sort:
  * Unstable
@@ -61,6 +61,7 @@ namespace HeapSort
                 sift(array, i - 1, 0);
             }
         }
+
         //Bottom up Heapsort
         private static void sift(int[] array, int size, int index){
 
