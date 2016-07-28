@@ -27,7 +27,7 @@ namespace RadixSort{
         static void Main(string[] args){
 
             //Unsorted Arrays
-            int[] iArray = new int[] { 123, 3, 151, 234, 701, 181, 401, 924, 155, 233, 456, 735, 412, 6 };
+            int[] iArray = new int[] { 123, 151, 234, 701, 181, 401, 924, 155, 233, 456, 735, 412, 6 };
             string[] sArray = new string[] { "MEL", "TOD", "TOM", "JAC", "CUB", "KOB", "KID", "PLY", "MIC", "ABC" };
 
             iArray = rSort(iArray, 3);
@@ -47,7 +47,7 @@ namespace RadixSort{
             Console.ReadLine();
         }
 
-        //radixSort for int[] 
+        //RadixSort for int[] 
         private static int[] rSort(int[] array, int dimension){
 
             bool toEnd = true;// counter to control exit
@@ -147,7 +147,7 @@ namespace RadixSort{
             return C;
         }
 
-        // Finding max value in array
+        //Finding max value in array
         static int MaxValue(record[] arr){
 
             int Max = arr[0].Value;// initial value to compare
